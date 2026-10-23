@@ -1,6 +1,5 @@
 import asyncio, os, logging
 import aiosqlite
-DB = "progress.db"
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.filters import CommandStart, Command, CommandObject
@@ -112,7 +111,7 @@ TEXTBOOKS = [("📘 British Council LearnEnglish (A1–A2)","https://learnenglis
 
 # ───────────────────────── BAZA ─────────────────────────
 async def db_init():
-    async with aiosqlite.connect(DB) as d:
+  async with aiosqlite.connect("progress.db") as d:
         await d.execute("CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY,name TEXT,xp INTEGER DEFAULT 0)")
         await d.execute("CREATE TABLE IF NOT EXISTS done(uid INTEGER,unit INTEGER,kind TEXT,score INTEGER DEFAULT 0,PRIMARY KEY(uid,unit,kind))")
         await d.commit()
