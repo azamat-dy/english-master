@@ -7,7 +7,7 @@ from aiogram.types import (Message, CallbackQuery, InlineKeyboardMarkup as KB,
                            InlineKeyboardButton as Btn, BufferedInputFile, WebAppInfo)
 
 load_dotenv()
-BOT_TOKEN, WEBAPP_URL = os.getenv("BOT_TOKEN"), os.getenv("WEBAPP_URL")
+BOT_TOKEN, WEBAPP_URL =8843378583:AAE6-OXek8H-Q_oT4DfOv6yCQ3f_yNHkHOs
 DB = "progress.db"
 
 # ───────────────────────── AI USTOZ (Claude) ─────────────────────────
@@ -17,7 +17,7 @@ except ImportError:
     AsyncAnthropic = None
 import aiohttp, io, base64
 from datetime import date
-AI_KEY = os.getenv("ANTHROPIC_API_KEY")
+AI_KEY =AQ.Ab8RN6JfSC0SUKTcRauaDFPpclz9rjYJ2l4vKec1lq-wpCsXfg
 AI = AsyncAnthropic(api_key=AI_KEY) if (AI_KEY and AsyncAnthropic) else None
 GKEY = os.getenv("GEMINI_API_KEY")                       # BEPUL: aistudio.google.com/app/apikey
 GMODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
