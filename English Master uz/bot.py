@@ -7,7 +7,7 @@ from aiogram.types import (Message, CallbackQuery, InlineKeyboardMarkup as KB,
                            InlineKeyboardButton as Btn, BufferedInputFile, WebAppInfo)
 
 load_dotenv()
-BOT_TOKEN = "8843378583:AAE6-OXek8H-Q_oT4DfOv6yCQ3f_yNHKhOs"
+BOT_TOKEN = "8843378583:AAE6-OXek8H-Q_oT4DfOv6yCQ3f_yNHkHOs"
 WEBAPP_URL = "https://english-master-uz.netlify.app"
 
 # ───────────────────────── AI USTOZ (Claude) ─────────────────────────
