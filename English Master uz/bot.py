@@ -17,7 +17,7 @@ except ImportError:
     AsyncAnthropic = None
 import aiohttp, io, base64
 from datetime import date
-AI_KEY =AQ.Ab8RN6JfSC0SUKTcRauaDFPpclz9rjYJ2l4vKec1lq-wpCsXfg
+AI_KEY = "AQ.AB8RN6JfSC0SUKTcRauaDFPpclz9rjYJ214vKec1lq-wpCsXfg"
 AI = AsyncAnthropic(api_key=AI_KEY) if (AI_KEY and AsyncAnthropic) else None
 GKEY = os.getenv("GEMINI_API_KEY")                       # BEPUL: aistudio.google.com/app/apikey
 GMODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
