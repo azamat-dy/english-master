@@ -1,5 +1,6 @@
 import asyncio, os, logging
 import aiosqlite
+DB = "progress.db"
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher, F, Router
 from aiogram.filters import CommandStart, Command, CommandObject
